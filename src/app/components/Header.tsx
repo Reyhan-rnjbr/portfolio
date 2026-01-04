@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center mt-[50px] header-bg
+    <div className="flex justify-between items-center mt-[50px] mx-[82px] header-bg
     ">
       <p className="text-[24px] font-bold">Your Logo</p>
       <ul
