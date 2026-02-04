@@ -224,7 +224,8 @@ const Hero = () => {
           <br />
           explore new possibilities.
         </p>
-           <button className=" flex items-center gap-2 rounded-full py-3 px-8 mt-6 border border-gray-300">
+           <a href="https://www.linkedin.com/in/reyhane-ranjbar-340b81104?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <button className=" flex items-center gap-2 rounded-full py-3 px-8 mt-6 border border-gray-300 bg-white  hover:border-yellow-400 hover:text-yellow-400">
           <svg
             width="20"
             height="20"
@@ -246,6 +247,7 @@ const Hero = () => {
           </svg>
           <p className="font-semibold text-gray-700">Contact Me</p>
         </button>
+           </a>
       </div>
       
       

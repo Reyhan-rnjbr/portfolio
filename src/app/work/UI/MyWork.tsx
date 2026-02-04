@@ -73,10 +73,10 @@ const MyWork = () => {
     <div className="flex flex-col  header-bg">
       <div className="flex flex-wrap gap-3 justify-center mt-20 px-4">
         <button className="border border-gray-200 bg-white rounded-full text-gray-700 px-4 py-1 text-sm sm:text-base font-medium">
-          Product Design
+          Front-End
         </button>
         <button className="border border-gray-200 bg-white rounded-full text-gray-700 px-4 py-1 text-sm sm:text-base font-medium">
-          UI/UX Design
+          React Developer
         </button>
         <button className="border border-gray-200 bg-white rounded-full text-gray-700 px-4 py-1 text-sm sm:text-base font-medium">
           Web Design
@@ -94,7 +94,8 @@ const MyWork = () => {
         explore new possibilities.
       </p>
       <div className="flex justify-center items-center">
-        <button className="border border-gray-300 bg-white rounded-full flex items-center gap-2 py-3 px-8 text-gray-700 font-semibold mt-6 mb-20">
+        <a href="https://www.linkedin.com/in/reyhane-ranjbar-340b81104?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <button className="border border-gray-300 bg-white rounded-full flex items-center gap-2 py-3 px-8 text-gray-700 font-semibold mt-6 mb-20  hover:border-yellow-400 hover:text-yellow-400">
           <svg
             width="20"
             height="20"
@@ -109,6 +110,7 @@ const MyWork = () => {
           </svg>
           Contact Me
         </button>
+        </a>
       </div>
       <div
         className=" grid

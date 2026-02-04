@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="flex flex-col">
-      <button className="    border border-gray-200
+      <button className="    border border-gray-200 hover:border-yellow-400 hover:text-yellow-400
     bg-gray-100
     rounded-full
     text-gray-700
@@ -30,7 +30,8 @@ const Contact = () => {
         explore new possibilities.
       </p>
       <div className="flex justify-center items-center">
-        <button className="border border-gray-300 bg-white rounded-full flex items-center gap-[6px] py-[12px] px-[38px] text-gray-700 font-semibold mt-[24px] mb-[24px]">
+        <a href="https://www.linkedin.com/in/reyhane-ranjbar-340b81104?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <button className="border border-gray-300 bg-white rounded-full flex items-center gap-[6px] py-[12px] px-[38px] hover:border-yellow-400 hover:text-yellow-400 text-gray-700 font-semibold mt-[24px] mb-[24px]">
           <svg
             width="20"
             height="20"
@@ -45,6 +46,7 @@ const Contact = () => {
           </svg>
           Contact Me
         </button>
+        </a>
       </div>
       <div className="flex items-center w-full max-w-md mx-auto">
         <div className="flex-1 h-px bg-gray-300" />
