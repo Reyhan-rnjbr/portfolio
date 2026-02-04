@@ -1,5 +1,6 @@
-import React from "react";
-type CardsProps = {
+import Link from "next/link";
+
+type PortfolioCardProps = {
   image: string;
   title: {
     primary: string;
@@ -7,37 +8,78 @@ type CardsProps = {
   };
   description: string;
   tags?: string[];
+  github?: string;
+  demo?: string;
 };
 
-const PortfolioCard = ({ image, title, description, tags = [] }: CardsProps) => {
+const PortfolioCard = ({
+  image,
+  title,
+  description,
+  tags,
+  github,
+  demo,
+}: PortfolioCardProps) => {
   return (
-    <div className="rounded-[16px] border border-gray-300 shadow-sm overflow-hidden px-[18px] py-6 ">
-      <div className="px-[10px] py-[10px] rounded-[10px] border border-gray-100 overflow-hidden ">
-        <img src={image} alt="" className="rounded-[8px] w-[441px] h-[375px] object-cover" />
+    <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:shadow-xl">
+      {/* IMAGE */}
+      <div className="relative h-[200px] sm:h-[230px] lg:h-[260px] overflow-hidden">
+        <img
+          src={image}
+          alt={title.primary}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+        {/* ACTIONS */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center gap-3 sm:gap-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          {github && (
+            <Link
+              href={github}
+              target="_blank"
+              className="rounded-full bg-white px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold text-gray-900 transition hover:bg-yellow-400"
+            >
+              GitHub
+            </Link>
+          )}
+
+          {demo && (
+            <Link
+              href={demo}
+              target="_blank"
+              className="rounded-full bg-white px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold text-gray-900 transition hover:bg-yellow-400"
+            >
+              Live Demo
+            </Link>
+          )}
+        </div>
       </div>
-      <div className="flex flex-col gap-[16px] pb-[16px] px-[28px]">
-        <h3 className="text-[24px] font-bold mt-[24px]">
-          <span className="text-[24px] font-bold"></span>
+
+      {/* CONTENT */}
+      <div className="p-4 sm:p-6">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900">
           {title.primary}
-          <span className="text-[24px] font-bold text-gray-700">
-            {" "}
-            {title.secondary}
-          </span>
+          <span className="text-gray-500"> {title.secondary}</span>
         </h3>
-        <p className="text-[16px] leading-[26px] text-justify text-gray-700">
+
+        <p className="mt-2 text-sm text-gray-600 line-clamp-3">
           {description}
         </p>
-        <hr className="1px text-gray-500 mb-[24px]" />
-        <div className="flex flex-wrap gap-[16px]">
-          {tags.map((tag, i) => (
-            <span
-              key={i}
-              className="px-3 py-1 text-xs rounded-full border border-gray-200 text-gray-700"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+
+        {tags && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

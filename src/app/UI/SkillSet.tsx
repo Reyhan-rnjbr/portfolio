@@ -1,48 +1,67 @@
 import React from "react";
 import SkillSection from "./SkillSection";
-import Skills from "./Skills";
 
 const SkillSet = () => {
   return (
-    <div className="mx-auto flex max-w-[960px] mt-[138px] mb-[138px] gap-[164px]">
-      <div>
-        <h2 className="font-bold text-[38px] items-baseline gap-4">
-          Skill
-          <span className="font-bold text-[38px] text-gray-700">set </span>
-        </h2>
-      </div>
-      <div className="flex flex-col gap-[34px]">
-        <SkillSection
-          title="Product"
-          skills={[
-            "Design System",
-            "Lean UX",
-            "Agile Methodology",
-            "Data Analysis",
-            "Startups",
-            "Data-Driven Design",
-            "User Centered Design",
-            "UI Kits",
-          ]}
-        />
+    <div
+      className="
+        mx-auto
+        max-w-[960px]
+        mt-16 sm:mt-24 lg:mt-[138px]
+        mb-16 sm:mb-24 lg:mb-[138px]
+        px-4
+      "
+    >
+      <div
+        className="
+          flex flex-col
+          lg:flex-row
+          gap-8 lg:gap-[164px]
+        "
+      >
+        {/* TITLE */}
+        <div>
+          <h2 className="font-bold text-[28px] sm:text-[32px] lg:text-[38px]">
+            Skill
+            <span className="text-gray-700">set </span>
+          </h2>
+        </div>
 
-        <SkillSection
-          title="UX Design"
-          skills={[
-            "User Interviews",
-            "Surveys",
-            "Personas",
-            "Competitor Audits",
-            "User Journey Maps",
-            "Empathy Maps",
-            "User Stories",
-            "Usability Testing",
-            "A/B Testing",
-            "Mind Mapping",
-            "User Flows",
-            "Information Architecture",
-          ]}
-        />
+        {/* CONTENT */}
+        <div className="flex flex-col gap-6 sm:gap-[34px]">
+          <SkillSection
+            title="Programming"
+            skills={[
+              "Javascript",
+              "TypeScript",
+              "HTML/CSS",
+              "React",
+              "Next.Js",
+              "React Router",
+              "React Query",
+              "Zustand",
+              "React HookForm",
+            ]}
+          />
+
+          <SkillSection
+            title="Styling & UI"
+            skills={[
+              "TailwindCSS",
+              "Responsive Design",
+              "RTL",
+              "Component Based Architecture",
+              "UIUX Principles",
+              "Accessibility Basics",
+              "Framer Motion",
+              "Swiper",
+              "Appex Charts",
+              "Mind Mapping",
+              "User Flows",
+              "Information Architecture",
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

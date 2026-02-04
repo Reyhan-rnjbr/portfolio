@@ -1,6 +1,7 @@
 @import "tailwindcss";
 .header-bg{
     background-image: url("/patern.jpg");
+    
       /* background-size: cover;
   background-position: center; */
 }

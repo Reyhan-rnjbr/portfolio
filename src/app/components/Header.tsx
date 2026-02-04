@@ -1,64 +1,62 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="flex justify-between items-center mt-[50px] mx-[82px] header-bg
-    ">
-      <p className="text-[24px] font-bold">Your Logo</p>
-      <ul
-        className="flex items-center gap-12
-      px-11 py-4
-      bg-white/60
-      backdrop-blur-md
-      rounded-full
-      shadow-md"
-      >
-        <li className="text-sm font-medium">
-          <Link href="">Home</Link>
-        </li>
-        <li className="text-sm font-medium">
-          <Link href="">Portfolio</Link>
-        </li>
-        <li className="text-sm font-medium">
-          <Link href="">Contact</Link>
-        </li>
-      </ul>
-      <button
-        className=" flex items-center gap-2
-        h-12 px-6
-        bg-white
-        border border-gray-200
-        rounded-full
-        text-sm font-medium
-        shadow-sm
-        hover:bg-gray-50
-        transition"
-      >
-        
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_6013_796)">
-              <path
-                d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42187 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043V17.043Z"
-                fill="#667085"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_6013_796">
-                <rect width="20" height="20" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <p className="text-gray-600 font-medium"> Get in Touch</p>
-        
-      </button>
-    </div>
+    <header className="relative px-4 sm:px-6 lg:mx-[82px] mt-6">
+      <div className="flex items-center justify-between">
+        {/* LOGO */}
+        <p className="text-[20px] sm:text-[22px] lg:text-[24px] font-bold">
+          Rey.Ranjbar
+        </p>
+
+        {/* DESKTOP MENU */}
+        <ul className="hidden md:flex items-center gap-10 px-10 py-4 bg-white/60 backdrop-blur-md rounded-full shadow-md">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/work">Portfolio</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+
+        {/* DESKTOP BUTTON */}
+        <button className="hidden md:flex items-center gap-2 px-6 py-3 bg-white border rounded-full shadow-sm">
+          Get in Touch
+        </button>
+
+        {/* HAMBURGER */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-2xl"
+        >
+          {open ? "✕" : "☰"}
+        </button>
+      </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="mt-4 rounded-2xl bg-white shadow-lg md:hidden">
+          <ul className="flex flex-col items-center gap-6 py-6">
+            <li onClick={() => setOpen(false)}>
+              <Link href="/">Home</Link>
+            </li>
+            <li onClick={() => setOpen(false)}>
+              <Link href="/work">Portfolio</Link>
+            </li>
+            <li onClick={() => setOpen(false)}>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </header>
   );
 };
 

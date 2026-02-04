@@ -4,16 +4,20 @@ const Toolbox = () => {
   return (
     <div className="flex flex-col justify-center  items-center bg-[#9999FF]">
       <div>
-        <h2 className="font-semibold text-[48px] mt-[64px]">
+        <h2 className="font-semibold text-[28px] sm:text-[36px] lg:text-[48px] mt-12 sm:mt-16">
           Design & Development Toolbox
-          <p className="text-gray-700 text-[18px] mt-[24px] ">
+          <p className="text-gray-700 text-[14px] sm:text-[16px] lg:text-[18px] mt-4 sm:mt-6 max-w-[720px] ">
             A comprehensive suite of tools that I use to design, prototype, and
             bring ideas to life
           </p>
         </h2>
       </div>
-      <div className="flex flex-wrap  max-w-[960px] justify-center mt-[64px] gap-[42px]">
-        <div className="flex items-center justify-center bg-white rounded-[7.68px] border border-gray-300 w-14 h-14">
+      <div className=" flex flex-wrap
+            justify-center
+            gap-4 sm:gap-6 lg:gap-[42px]
+            mt-10 sm:mt-16
+            pb-16">
+        <div className="flex items-center justify-center bg-white rounded-[7.68px] border border-gray-300 w-12 h-12 sm:w-14 sm:h-14">
           <svg
             className="w-[23px] h-[39px]"
             width="33"
@@ -23,32 +27,32 @@ const Toolbox = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M16.3125 24.4687C16.3125 19.9642 19.9642 16.3125 24.4688 16.3125C28.9733 16.3125 32.625 19.9642 32.625 24.4687C32.625 28.9733 28.9733 32.625 24.4688 32.625C19.9642 32.625 16.3125 28.9733 16.3125 24.4687Z"
               fill="#1ABCFE"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M0 40.7813C0 36.2767 3.65168 32.625 8.15625 32.625H16.3125V40.7813C16.3125 45.2858 12.6608 48.9375 8.15625 48.9375C3.65168 48.9375 0 45.2858 0 40.7813Z"
               fill="#0ACF83"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M16.3125 0V16.3125H24.4688C28.9733 16.3125 32.625 12.6608 32.625 8.15625C32.625 3.65168 28.9733 0 24.4688 0H16.3125Z"
               fill="#FF7262"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M0 8.15625C0 12.6608 3.65168 16.3125 8.15625 16.3125H16.3125V0H8.15625C3.65168 0 0 3.65168 0 8.15625Z"
               fill="#F24E1E"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M0 24.4687C0 28.9733 3.65168 32.625 8.15625 32.625H16.3125V16.3125H8.15625C3.65168 16.3125 0 19.9642 0 24.4687Z"
               fill="#A259FF"
             />
@@ -64,20 +68,20 @@ const Toolbox = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M24.0032 40.171L24.1308 48.0002C22.9624 48.0009 21.8396 47.5463 21.0007 46.7329L20.3894 46.005L5.537 28.3433L0.485106 22.3305C0.471836 22.3234 0.461204 22.3122 0.454779 22.2986L0.37497 22.206L0.359008 22.1853C0.260212 22.055 0.181151 21.9109 0.12437 21.7575C0.048815 21.5695 0.00720242 21.3695 0.00146484 21.1669V21.0456C0.00146484 21.0073 0.00465719 20.9674 0.0126381 20.9291C0.0475658 20.5358 0.214013 20.1658 0.485106 19.8788C0.80913 19.5277 1.28 19.3042 1.79716 19.3042H6.78521L24.0016 40.1742L24.0048 40.171H24.0032Z"
               fill="#FCD1CA"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M24.0001 30.7822V40.4853L0.450122 12.3831C0.308682 12.2247 0.197261 12.0419 0.121309 11.8436C0.0467364 11.6536 0.00569102 11.4522 0 11.2482V11.1285C0.0127694 10.6784 0.193137 10.2745 0.483641 9.96647C0.806069 9.61052 1.27694 9.39185 1.7957 9.39185H6.2618L24.0001 30.7822Z"
               fill="#FF9D8D"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M1.78599 0.00163148C1.27202 0.00163148 0.799553 0.218712 0.480318 0.573063C0.193006 0.87474 0.0142342 1.28336 0.00146484 1.72869V1.84681C0.00625337 2.0591 0.0477539 2.25703 0.122774 2.4374C0.12437 2.45495 0.132351 2.46932 0.138736 2.48528C0.216685 2.673 0.328099 2.84499 0.467548 2.99286L0.493087 3.0216L24 30.7823V48.0002C25.1618 48.0027 26.2786 47.5514 27.1125 46.7424C27.1173 46.7424 27.1173 46.7424 27.1173 46.7393L47.5483 22.4838C47.5739 22.4582 47.5962 22.4295 47.6186 22.4008C47.7271 22.2667 47.8133 22.115 47.8772 21.949C47.957 21.7511 47.9985 21.534 47.9985 21.3026V1.78456C48.0005 1.33217 47.8278 0.896461 47.5164 0.568274C47.3501 0.387733 47.1479 0.243928 46.9228 0.146075C46.6977 0.0482215 46.4546 -0.00152081 46.2091 3.54191e-05H1.78759L1.78599 0.00163148Z"
               fill="#FF6661"
             />
@@ -93,8 +97,8 @@ const Toolbox = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M52.5625 0L35.7904 32.7881H20.0366L27.056 19.1995H26.7408C20.9503 26.716 12.3102 31.6645 0 32.7881V19.3875C0 19.3875 7.87514 18.9221 12.5049 14.0547H0V0.000718628H14.054V11.5597L14.3693 11.5584L20.1123 0.000718628H30.7414V11.4868L31.0566 11.4861L37.0152 0H52.5625Z"
               fill="#146EF5"
             />
@@ -110,8 +114,8 @@ const Toolbox = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M0 30.8335H16.1875V46.2502L0 30.8335Z"
               fill="#0055FF"
             />
@@ -159,8 +163,8 @@ const Toolbox = () => {
               fill="black"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M31.9862 0.0132488L3.07423 1.98719C1.34242 2.10542 0 3.49772 0 5.17562V33.2964C0 34.8729 0.542699 36.4047 1.5426 37.6503L7.77644 45.4162C8.78434 46.6718 10.3705 47.3632 12.0115 47.2622L44.1005 45.2869C45.7451 45.1857 47.0255 43.867 47.0255 42.2742V10.3037C47.0255 9.31828 46.5279 8.39491 45.6924 7.83006L35.5343 0.962113C34.499 0.262186 33.2464 -0.0727948 31.9862 0.0132488ZM4.50791 5.61426C4.1058 5.31655 4.29717 4.69632 4.80232 4.66009L32.1807 2.69634C33.053 2.63377 33.9198 2.87399 34.6252 3.3738L40.1185 7.26569C40.327 7.41344 40.2292 7.73242 39.971 7.74646L10.9775 9.3233C10.1 9.37102 9.23393 9.11325 8.53628 8.59673L4.50791 5.61426ZM9.61754 14.2666C9.61754 13.3247 10.3785 12.5467 11.3516 12.4937L42.006 10.8242C42.9543 10.7726 43.7526 11.5019 43.7526 12.4199V40.103C43.7526 41.0432 42.9944 41.8204 42.0232 41.8757L11.5629 43.6089C10.5075 43.6689 9.61754 42.8579 9.61754 41.8362V14.2666Z"
               fill="black"
             />
