@@ -18,24 +18,24 @@ const cards: Card[] = [
   {
     image: "/greencart.jpg",
     title: {
-      primary: "KASO",
-      secondary: "– YC Combinator Platform",
+      primary: "greenCart",
+      secondary: "– API-based",
     },
     description:
-      "Kaso YC (formerly ElKaso) is an online B2B platform that facilitates order processing and communication between restaurants and suppliers.",
-    tags: ["KASO", "Foodtech", "YC Combinator"],
-    github: "https://github.com/username/kaso",
+      "A Next.js project featuring API-based authentication, built with React Query, Zustand, React Hook Form, and Axios.",
+    tags: ["React", "axios", "React Hook Form"],
+    github: "https://github.com/Reyhan-rnjbr/greenCart",
     demo: "https://kaso-demo.com",
   },
   {
     image: "/Hamrahman.jpg",
     title: {
-      primary: "KASO",
-      secondary: "– YC Combinator Platform",
+      primary: "Hamrah Aval",
+      secondary: "- Mobile First",
     },
     description:
-      "Kaso YC (formerly ElKaso) is an online B2B platform that facilitates order processing and communication between restaurants and suppliers.",
-    tags: ["KASO", "Foodtech", "YC Combinator"],
+      " A mobile-first, bilingual React project developed for Hamrah Aval, using i18next, Tailwind CSS, Zustand, and Framer Motion",
+    tags: ["React", "Zustand", "Tailwind CSS"],
     github: "https://github.com/Reyhan-rnjbr/hamrahMan.git",
     demo: "/HamrahMan.mp4",
   },

@@ -39,7 +39,7 @@ const projects = [
 
   {
     image: "/realState.jpg",
-    github: "https://github.com/Reyhan-rnjbr/rentalcar",
+    github: "https://github.com/Reyhan-rnjbr/realState",
     live: "",
   },
 
